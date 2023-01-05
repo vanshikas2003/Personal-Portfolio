@@ -1,0 +1,717 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+/* navbar styling */
+
+.navbar{
+    position: fixed;
+    padding: 30px 0;
+    width: 100%;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.5s ease;
+}
+
+.navbar .logo a{
+    font-size: 35px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.navbar .logo a span{
+    background: -webkit-linear-gradient(#f32170,#ff6b08, #cf23cf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.5s ease;
+}
+
+.navbar .sticky .logo a{
+color: #fff;
+}
+.navbar .menu li a{
+color: #fff;
+font-size: 18px;
+font-weight: 500;
+margin-left: 25px;
+transition: 0.3s ease;
+
+}
+.navbar .menu li a:hover{
+    background: -webkit-linear-gradient(#f32170,#ff6b08, #cf23cf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.navbar .menu li{
+    display: inline-block;
+    list-style: none;
+}
+
+.navbar .menu {
+    margin-left: 500px;
+}
+
+.navbar .sticky{
+    padding: 15 px;
+    background: #f32170;
+}
+.navbar .max-width{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.navbar .max-width ul{
+    margin-right: 0px;
+}
+
+.navbar .menu a{
+    scroll-behavior: smooth;
+}
+
+/* home styling */
+
+.home{
+display: flex;
+color: #fff;
+min-height: 800px;
+font-family: 'Ubuntu', sans-serif;
+background: black;
+}
+
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+
+.home .home-content{
+margin-top: 80px;
+}
+
+.home .home-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+justify-content: space-between;
+}
+
+.home .home-content .left{
+    width: 45%;
+}
+
+.home .image{
+    width: 55%;
+}
+.home .image img{
+    height: 350px;
+    width: 350px;
+    border-radius: 4px;
+    margin-left: 200px;
+    object-fit: cover;
+}
+
+.home .home-content .text1{
+font-size: 23px;
+}
+
+.home .home-content .text2{
+    font-size: 65px;
+    font-weight: 400;
+    margin-left: -3px;
+}
+
+.home .home-content .text3{
+        font-size: 35px;
+        margin: 5px;
+}
+
+.home .home-content .text3 span{
+            font-size: 50px;
+            background: -webkit-linear-gradient(#f32170,#ff6b08, #cf23cf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+}
+
+.home .home-content a{
+    display: inline-block;
+    background: linear-gradient(
+        to right, #f32170, #ff6b08,
+         #cf23cf);
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: 2px solid #f32170;
+    transition: all 0.5s ease;
+}
+
+.home .home-content a:hover{
+    color: #f32170;
+    background: none;
+}
+
+
+/* about styling */
+
+section{
+    padding: 80px;
+}
+
+
+.about{
+    font-family: 'Poppins', sans-serif;
+}
+
+.about .title{
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.about .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+
+.about .title::after{
+    content: "who I am";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+    font-size: 18px;
+    color: #f32170;
+}
+
+
+.about .about-content .column-left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+justify-content: space-between;
+}
+
+.about .about-content .left{
+    width: 45%;
+}
+
+.about .about-content .right{
+    width: 55%;
+}
+
+.about .about-content .right .text{
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about .about-content .right .text span{
+    background: -webkit-linear-gradient(#f32170,#ff6b08, #cf23cf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+}
+
+.about .about-content .right .text p{
+    text-align: justify;
+    font-size: 28px;
+}
+
+.about .about-content .right a{
+    display: inline-block;
+    background: linear-gradient(
+        to right, #f32170, #ff6b08,
+         #cf23cf);
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: 2px solid #f32170;
+    transition: all 0.5s ease;
+    font-weight: 500;
+}
+
+.about .about-content .right a:hover{
+    color: #f32170;
+    background: none;
+}
+
+
+/* service styling */
+
+
+.services{
+    color: #fff;
+    background: #111;
+}
+
+section{
+    padding: 80px;
+}
+
+.services{
+    font-family: 'Poppins', sans-serif;
+}
+
+.services .services-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+justify-content: space-between;
+}
+
+.services .title{
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.services .title::before{
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        width: 180px;
+        height: 3px;
+        background: #fff;
+        transform: translateX(-50%);
+}
+    
+.services .title::after{
+        content: "what I provide";
+        position: absolute;
+        bottom: -12px;
+        left: 50%;
+        padding: 5px;
+        background: #111;
+        transform: translateX(-50%);
+        font-size: 20px;
+        color: #f32170;
+    }
+
+.services .services-content .card{
+        width: calc(33% - 20px);
+        background: #222;
+        text-align: center;
+        border-radius: 6px;
+        padding: 20px 25px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin-top: 30px;
+
+}
+
+.services .services-content .card i{
+        font-size: 50px;
+        color: #f32170;
+}
+
+    .services .services-content .card .text{
+        font-size: 35px;
+        font-weight: 500;
+        margin: 10px 0 7px 0;
+    }
+
+    .services .services-content .card .box{
+        transition: all 0.5s ease;
+    }
+
+    .services .services-content .card:hover .box{
+        transform: scale(1.05);
+    }
+
+    .services .services-content .card:hover{
+        background: linear-gradient(
+        to right, #f32170, #ff6b08,
+         #cf23cf);
+}
+
+/* skills styling */
+
+section{
+    padding: 80px;
+}
+
+.skills{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.skills .title{
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.skills .text{
+    font-family: "Poppins", sans-serif;
+    }
+
+.skills p{
+        font-family: "Poppins", sans-serif;
+        }
+
+.skills .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+
+.skills .title::after{
+content: "what I know";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+    font-size: 20px;
+    color: #f32170;
+}
+
+.skills .column{
+width: calc(50% - 30px);
+}
+
+.skills .skills-content{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: space-between;
+}
+
+.skills .skills-content .left .text{
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.skills .skills-content .right .bars{
+    margin-bottom: 15px;
+}
+
+.skills .skills-content .right .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.skills .skills-content .right span{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.skills .skills-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: lightgray;
+    position: relative;
+}
+
+.skills .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #f32170;
+
+}
+
+.skills-content .right .html::before{
+    width: 90%;
+}
+
+.skills-content .right .css::before{
+    width: 60%;
+}
+.skills-content .right .js::before{
+    width: 80%;
+}
+.skills-content .right .php::before{
+    width: 50%;
+}
+.skills-content .right .mysql::before{
+    width: 70%;
+}
+
+.skills .skills-content .left p{
+    text-align: justify;
+}
+
+.skills .skills-content .left a{
+    font-family: "Poppins";
+    display: inline-block;
+    background: linear-gradient(
+        to right, #f32170, #ff6b08,
+         #cf23cf);
+    color: #fff;
+    font-size: 18px;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border: 2px solid #f32170;
+    transition: all 0.5s ease;
+}
+
+.skills .skills-content .left a:hover{
+color: #f32170;
+background: none;
+}
+
+
+
+/* contact styling */
+
+.contact{
+    color: #fff;
+    background: #111;
+}
+
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.contact .title{
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.contact .text{
+font-family: "Poppins", sans-serif;
+}
+
+.contact p{
+    padding: 20px;
+    font-family: "Poppins", sans-serif;
+    }
+
+    .contact .row .head{
+        font-family: "Ubuntu", sans-serif;
+    }
+
+    .contact .row .sub-title{
+        font-family: "Poppins", sans-serif;
+    }
+
+
+.contact .title::before{
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        width: 180px;
+        height: 3px;
+        background: #fff;
+        transform: translateX(-50%);
+}
+    
+.contact .title::after{
+    content: "get in touch";
+        position: absolute;
+        bottom: -12px;
+        left: 50%;
+        padding: 5px;
+        background: #111;
+        transform: translateX(-50%);
+        font-size: 20px;
+        color: #f32170;
+    }
+
+.contact .contact-content .column{
+    width: calc(50% - 30px);
+}
+
+.contact .contact-content .left p{
+    text-align: justify;
+
+}
+
+.contact .contact-content .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+
+.contact .contact-content .row .info{
+    margin-left:  40px;
+}
+
+.contact .contact-content .info .head{
+    font-size: 25px;
+    /* background: -webkit-linear-gradient(#f32170,#ff6b08, #cf23cf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent; */
+}
+
+.contact .contact-content .row i{
+    font-size: 30px;
+    color: #f32170;
+}
+
+.contact .contact-content .info .sub-title{
+    color: lightgray;
+}
+
+.contact .contact-content .left .row{
+    margin-bottom: 30px;
+}
+
+.contact .contact-content .left .icons{
+    margin-top: 30px;
+}
+/* .contact .right{
+    margin-left: 660px;
+} */
+
+/* .contact .max-width .right{
+    margin-top: 0px;
+} */
+
+.contact .right form .fields{
+    display: flex;
+}
+
+.contact .right form .fields .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.contact .right form .field{
+    height: 45px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+
+.contact .right form .field input{
+    height: 100%;
+    width: 100%;
+    border: 1px solid rgb(150, 150, 150);
+    border-radius: 4px;
+    outline: none;
+    padding: 0 18px;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+}
+
+.contact .right form .name{
+    margin-right: 10px;
+}
+
+.contact .right form .email{
+    margin-left: 10px;
+}
+
+.contact .right form .textarea{
+    height: 80px;
+    width: 100%;
+}
+
+.contact .right form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 15px;
+    padding-top: 10px;
+}
+
+.contact .right form .button{
+    margin-top: 40px;
+    height: 47px;
+    width: 170px;
+}
+
+.contact .right form .button button{
+    width: 100%;
+    height: 100%;
+    border: 2px solid #f32170;
+    background: linear-gradient(
+        to right, #f32170, #ff6b08,
+         #cf23cf);
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+transition: all 0.5s ease;
+border-radius: 4px
+}
+
+.contact .right form .button button:hover{
+    color: #f32170;
+    background: none;
+}
+
+/* footer styling */
+
+footer{
+    background: #111;
+    padding: 20px 23px;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
